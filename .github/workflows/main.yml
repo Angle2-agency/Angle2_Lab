@@ -33,5 +33,5 @@ jobs:
         chmod 700 ~/.ssh
         ssh-keyscan 207.154.220.86 >> ~/.ssh/known_hosts
         chmod 644 ~/.ssh/known_hosts
-        rsync -a --chmod=D2775,F664 --delete "$GITHUB_WORKSPACE"/build/ cidelivery@207.154.220.86:/var/www/projects/angleto.agency/lab 
+        rsync -a --chmod=D2775,F664 --delete "$GITHUB_WORKSPACE"/dist/ cidelivery@207.154.220.86:/var/www/projects/angleto.agency/lab 
         
