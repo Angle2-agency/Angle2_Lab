@@ -289,37 +289,37 @@ export default {
     
 
     /* Gyroscope Start */
-    window.addEventListener('deviceorientation', function(e){
-      app.alpha = e.alpha;
-      app.beta = e.beta;
-      app.gamma = e.gamma;
-      let x;
-      if(window.orientation == 0){
-        if(e.beta < 90){
-          x = e.gamma;
-        }else{
-          x = -e.gamma;
-        }
-      }else if(window.orientation == 90){
-        if(e.gamma > -90 && e.gamma < 0){
-          x = e.beta
-        }else if(e.gamma > 0 && e.gamma < 90){
-          if(e.beta > 0)x = 180 - e.beta;
-          if(e.beta < 0)x = (180 + e.beta)*-1;
-        }
-      }else if(window.orientation == -90){
-        if(e.gamma > 0 && e.gamma < 90){
-          x = -e.beta;          
-        }else if(e.gamma > -90 && e.gamma < 0){
-          if(e.beta > 0)x = (180 - e.beta) * -1;
-          if(e.beta < 0)x = 180 + e.beta;
-        }
-      }      
-      app.$store.commit('set', {
-        name: 'deviceorientation',
-        value: x
-      });      
-    });
+    // window.addEventListener('deviceorientation', function(e){
+    //   app.alpha = e.alpha;
+    //   app.beta = e.beta;
+    //   app.gamma = e.gamma;
+    //   let x;
+    //   if(window.orientation == 0){
+    //     if(e.beta < 90){
+    //       x = e.gamma;
+    //     }else{
+    //       x = -e.gamma;
+    //     }
+    //   }else if(window.orientation == 90){
+    //     if(e.gamma > -90 && e.gamma < 0){
+    //       x = e.beta
+    //     }else if(e.gamma > 0 && e.gamma < 90){
+    //       if(e.beta > 0)x = 180 - e.beta;
+    //       if(e.beta < 0)x = (180 + e.beta)*-1;
+    //     }
+    //   }else if(window.orientation == -90){
+    //     if(e.gamma > 0 && e.gamma < 90){
+    //       x = -e.beta;          
+    //     }else if(e.gamma > -90 && e.gamma < 0){
+    //       if(e.beta > 0)x = (180 - e.beta) * -1;
+    //       if(e.beta < 0)x = 180 + e.beta;
+    //     }
+    //   }      
+    //   app.$store.commit('set', {
+    //     name: 'deviceorientation',
+    //     value: x
+    //   });      
+    // });
     /* Gyroscope End */
 
     if(/Firefox/i.test(navigator.userAgent)){      
@@ -463,7 +463,22 @@ export default {
       }, 100);      
     }    
   },
-  methods : {  
+  methods : {
+    // deviceorientation(e) {
+    //   if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+    //     DeviceOrientationEvent.requestPermission()
+    //       .then(permissionState => {
+    //         if (permissionState === 'granted') {
+    //           window.addEventListener('deviceorientation', (e) => {
+    //             console.log('Deviceorientation!!');
+    //           });
+    //         }
+    //       })
+    //       .catch(console.error);
+    //   } else {
+    //     // handle regular non iOS 13+ devices
+    //   }
+    // },
     closest : function(el, selector){
       var matchesFn;
       // find vendor prefix
@@ -651,7 +666,7 @@ export default {
     },
     touchevent: function(e){
       const app = this;      
-      if(!app.touch){       
+      if(!app.touch){
        app.$store.commit('set', {
           name: 'touch',
           value: true
@@ -659,7 +674,7 @@ export default {
        TweenMax.to('.progress-ring__circle', 0.7, {strokeDashoffset : 150.796, onComplete: function(){
          TweenMax.set('.cursor-ring', {display: 'none'});
       }});
-      TweenMax.to(document.querySelectorAll('.cursor-ring__arrow'), 0.7, {opacity: 0});
+        TweenMax.to(document.querySelectorAll('.cursor-ring__arrow'), 0.7, {opacity: 0});
       }      
 
       if(e.target.classList.contains('hover-link') || app.closest(e.target, '.hover-link'))return;      
