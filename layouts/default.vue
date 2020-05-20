@@ -276,7 +276,8 @@ import startProject from "~/components/StartProjact.vue";
 import turn from "~/components/Turn.vue";
 export default {  
   mounted : function () {
-    const app = this;    
+    const app = this;
+    console.log('Hello Bro');
     //app.$root.longClickAnimation = new TimelineMax();
     // app.$router.beforeEach(function (to, from, next) {
     //   app.$store.commit('set', {
