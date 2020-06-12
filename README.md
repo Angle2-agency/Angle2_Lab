@@ -79,18 +79,18 @@ The best interface is the one that helps your business thrive. We know how to bu
 $ npm install # Or yarn install
 ```
 
-### serve with hot reload at localhost:3000
+### Serve with hot reload at localhost:3000
 ```sh
 $ npm run dev
 ```
 
-### build for production and launch server
+### Build for production and launch server
 ```sh
 $ npm run build
 $ npm start
 ```
 
-### generate static project
+### Generate static project
 ```sh
 $ npm run generate
 ```
