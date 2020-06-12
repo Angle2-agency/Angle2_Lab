@@ -1,6 +1,8 @@
-# Angle2
+# Angle2 Lab
 
-> Transforming business ideas into beautiful digital experiences
+> Transforming business ideas into beautiful digital experiences [https://angle2.agency/lab/](https://angle2.agency/lab/)
+
+![](http://process.angleto.com/projects-preview/angle2.jpg)
 
 ## Things we do with great skill and passion
 
@@ -27,16 +29,78 @@ We aspire to study ideas and problems from your perspective and put ourselves in
 Caring about your KPIs and brand image
 The best interface is the one that helps your business thrive. We know how to build a digital experience that will boost your sales and reinforce your brand image.
 
+
+### Technologies: 
+* React.js
+* Redux
+* Redux Saga
+* Redux Thunk
+* Ant design 
+* FullCalendar
+* Lodash
+
+
 ### Technologies used:
 
-* HTML5
-* CSS3
-* Vue2
-* Greensock Animation Platform
+* Vue.js
+* Nuxt.js
+* Vuex
+* Greensock (GSAP)
+* Three.js
 * SVG Animation
 * Scroll Control
-* Media Queries Adaptation
 * Customize cursor settings
 * Gyroscope Web Api
 
-![](http://process.angleto.com/projects-preview/angle2.jpg)
+
+### Approach/challenges: 
+
+* GPU load optimization
+* PageSpeed Insights optimization
+
+
+### Features
+```bash
+- Vedux state management [Vuex](https://vuex.vuejs.org/)
+- SASS support [Sass](http://sass-lang.com/)
+- Control script animation. [GSAP](https://greensock.com/gsap/)
+- API [Stackable.space](http://www.stackabke.space/)
+- Beautiful image transitions [Three.js](https://threejs.org/)
+- Lightweight and fast.
+```
+
+
+### Requirements
+```bash
+- [Node](https://nodejs.org) 4.x or better
+```
+
+
+### Stack
+```bash
+- [Vue](https://vuejs.org/) for development
+- [Vue CLI](https://github.com/vuejs/vue-cli) for development
+- [Babel](http://babeljs.io/) for ES6+ support
+```
+
+
+### Installation
+```sh
+$ npm install # Or yarn install
+```
+
+### serve with hot reload at localhost:3000
+```sh
+$ npm run dev
+```
+
+### build for production and launch server
+```sh
+$ npm run build
+$ npm start
+```
+
+### generate static project
+```sh
+$ npm run generate
+```
