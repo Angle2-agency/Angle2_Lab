@@ -1,6 +1,6 @@
 # Angle2 Lab
 
-> Transforming business ideas into beautiful digital experiences [https://angle2.agency/lab/](https://angle2.agency/lab/)
+Transforming business ideas into beautiful digital experiences [https://angle2.agency/lab/](https://angle2.agency/lab/)
 
 ![](http://process.angleto.com/projects-preview/angle2.jpg)
 
