@@ -73,7 +73,7 @@ The best interface is the one that helps your business thrive. We know how to bu
 ```
 
 
-### Settings
+### Configuration
 ```sh
 nuxt.config.js
 ```
