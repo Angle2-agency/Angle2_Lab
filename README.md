@@ -51,7 +51,7 @@ The best interface is the one that helps your business thrive. We know how to bu
 
 ### Features
 ```bash
-- Vedux state management [Vuex](https://vuex.vuejs.org/)
+- Vuex state management [Vuex](https://vuex.vuejs.org/)
 - SASS support [Sass](http://sass-lang.com/)
 - Control script animation. [GSAP](https://greensock.com/gsap/)
 - Beautiful image transitions [Three.js](https://threejs.org/)
