@@ -73,6 +73,11 @@ The best interface is the one that helps your business thrive. We know how to bu
 ```
 
 
+### Settings
+```sh
+nuxt.config.js
+```
+
 ### Installation
 ```sh
 $ npm install # Or yarn install
