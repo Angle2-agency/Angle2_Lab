@@ -54,7 +54,6 @@ The best interface is the one that helps your business thrive. We know how to bu
 - Vedux state management [Vuex](https://vuex.vuejs.org/)
 - SASS support [Sass](http://sass-lang.com/)
 - Control script animation. [GSAP](https://greensock.com/gsap/)
-- API [Stackable.space](http://www.stackabke.space/)
 - Beautiful image transitions [Three.js](https://threejs.org/)
 - Lightweight and fast.
 ```
