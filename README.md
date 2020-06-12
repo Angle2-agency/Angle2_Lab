@@ -30,16 +30,6 @@ Caring about your KPIs and brand image
 The best interface is the one that helps your business thrive. We know how to build a digital experience that will boost your sales and reinforce your brand image.
 
 
-### Technologies: 
-* React.js
-* Redux
-* Redux Saga
-* Redux Thunk
-* Ant design 
-* FullCalendar
-* Lodash
-
-
 ### Technologies used:
 
 * Vue.js
